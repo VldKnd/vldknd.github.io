@@ -30,6 +30,15 @@
       border-radius: 4px;
       font-family: monospace;
     }
+    .sticker {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: auto;
+    z-index: 10;
+    margin: 10px;
+  }
   </style>
 </head>
 <body>
@@ -50,11 +59,12 @@
 
   <script>
     const stickers = [
-      'stickers/sticker1.png',
-      'stickers/sticker2.png',
-      'stickers/sticker3.png',
-      'stickers/sticker4.png'
-      // Add more if you have them
+      'stickers/sticker_1.png',
+      'stickers/sticker_2.png',
+      'stickers/sticker_3.png',
+      'stickers/sticker_4.png',
+      'stickers/sticker_5.png',
+      'stickers/sticker_6.png'
     ];
 
     const randomSticker = stickers[Math.floor(Math.random() * stickers.length)];

@@ -2,8 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>A Better Motherfucking Website</title>
+  <title>Vladimir Kondratyev</title>
   <style>
+    a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: pink;
+      background-color: transparent;
+      text-decoration: none;
+    }
     body {
       max-width: 650px;
       margin: 40px auto;
@@ -33,17 +44,24 @@
     .sticker {
     position: fixed;
     bottom: 0;
-    left: 0;
-    width: 100px;
+    left: 5%;
+    width: 10%;
     height: auto;
     z-index: 10;
-    margin: 10px;
+  }
+    .email_cursive {
+    bottom: 0;
+    max-width: 450px;
+    right: 5%;
+    height: auto;
+    z-index: 10;
   }
   </style>
 </head>
 <body>
-  <h1>A Better Motherfucking Website</h1>
-  <p>You know what’s better than <a href="http://motherfuckingwebsite.com">Motherfucking Website</a>?</p>
+  <h1>Vova Kondratyev</h1>
+  <img class="email_cursive" src="assets/email_cursive.png" alt="email_cursive">
+  <p><a href="https://github.com/VldKnd" target="_blank">github</a> <a href="https://www.linkedin.com/in/vlknd" target="_blank">linkedin</a></p>
   <p>This. This is better.</p>
   <h2>Why?</h2>
   <ul>
@@ -52,19 +70,17 @@
     <li>It has better spacing.</li>
     <li>It doesn’t look like it was made in 1994.</li>
   </ul>
-  <p>You don’t need a framework. You don’t need Bootstrap. Just good HTML and CSS.</p>
-  <p>Make shit that looks good and loads fast.</p>
-  <p>Now go make a better web.</p>
-  <img id="randomSticker" class="sticker" src="" alt="sticker">
 
+  <hr/>
+  <p>Inspired by <a href="http://motherfuckingwebsite.com">this simple website</a>.</p>
+  <img id="randomSticker" class="sticker" src="" alt="sticker">
   <script>
     const stickers = [
-      'stickers/sticker_1.png',
-      'stickers/sticker_2.png',
-      'stickers/sticker_3.png',
-      'stickers/sticker_4.png',
-      'stickers/sticker_5.png',
-      'stickers/sticker_6.png'
+      'stickers/sticker_1.webp',
+      'stickers/sticker_2.webp',
+      'stickers/sticker_3.webp',
+      'stickers/sticker_4.webp',
+      'stickers/sticker_5.webp'
     ];
 
     const randomSticker = stickers[Math.floor(Math.random() * stickers.length)];

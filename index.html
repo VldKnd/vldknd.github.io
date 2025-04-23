@@ -46,5 +46,19 @@
   <p>You don’t need a framework. You don’t need Bootstrap. Just good HTML and CSS.</p>
   <p>Make shit that looks good and loads fast.</p>
   <p>Now go make a better web.</p>
+  <img id="randomSticker" class="sticker" src="" alt="sticker">
+
+  <script>
+    const stickers = [
+      'stickers/sticker1.png',
+      'stickers/sticker2.png',
+      'stickers/sticker3.png',
+      'stickers/sticker4.png'
+      // Add more if you have them
+    ];
+
+    const randomSticker = stickers[Math.floor(Math.random() * stickers.length)];
+    document.getElementById('randomSticker').src = randomSticker;
+  </script>
 </body>
 </html>

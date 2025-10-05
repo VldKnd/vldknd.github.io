@@ -12,7 +12,7 @@
     }
 
     a:visited {
-      color: lightgreen;
+      color: darkgreen;
       background-color: transparent;
       text-decoration: none;
     }
@@ -49,46 +49,55 @@
     width: 10%;
     height: auto;
     z-index: 10;
-  }
-    .email_cursive {
-    bottom: 0;
-    max-width: 450px;
-    right: 5%;
-    height: auto;
-    z-index: 10;
-  }
+    }
+      .email_cursive {
+      bottom: 0;
+      max-width: 450px;
+      right: 5%;
+      height: auto;
+      z-index: 10;
+    }
+    .publications p {
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+    }
   </style>
 </head>
 <body>
   <h1>Vova Kondratyev</h1>
   <img class="email_cursive" src="assets/email_cursive.png" alt="email_cursive">
-  <p><a href="https://github.com/VldKnd" target="_blank">github</a> <a href="https://www.linkedin.com/in/vlknd" target="_blank">linkedin</a></p>
+  <p>
+    <a href="https://github.com/VldKnd" target="_blank">github</a>
+    <a href="https://www.linkedin.com/in/vlknd" target="_blank">linkedin</a>
+  </p>
   <p>
     &emsp;Hello! I'm a software engineer with a strong interest in applied mathematics and Bayesian statistics. I currently pursue a PhD in statistical machine learing at MBZUAI, under the suprevision of Maxim Panov and Eric Moulines. Over the course of my studies and professional experience, I've completed a variety of projects—ranging from simple front-end development to the design and implementation of complex machine learning systems. I'm currently based in France and always open to collaborations—feel free to reach out!
   </p>
 
+  <div class="publications">
   <p>
     Publications:
   </p>
+
   <p>
-    <a href="https://openreview.net/forum?id=ylaKpd7tmA&referrer=%5Bthe%20profile%20of%20Vladimir%20Kondratyev%5D(%2Fprofile%3Fid%3D~Vladimir_Kondratyev1)" target="_blank">Neural Optimal Transport Meets Multivariate Conformal Prediction</a>, Submitted to 2026 ICLR
-  </p>
-  <p>
-    <a href="https://openreview.net/forum?id=DTxx0D9pTf&referrer=%5Bthe%20profile%20of%20Vladimir%20Kondratyev%5D(%2Fprofile%3Fid%3D~Vladimir_Kondratyev1)" target="_blank">Multidimensional Uncertainty Quantification via Optimal Transport</a>, Submitted to 2026 ICLR
+    - <a href="https://openreview.net/forum?id=ylaKpd7tmA&referrer=%5Bthe%20profile%20of%20Vladimir%20Kondratyev%5D(%2Fprofile%3Fid%3D~Vladimir_Kondratyev1)" target="_blank">Neural Optimal Transport Meets Multivariate Conformal Prediction</a>, Submitted to 2026 ICLR
   </p>
   <p>
-    <a href="https://openreview.net/forum?id=cWfpt2t37q&noteId=0zx16JfXDb" target="_blank">From Risk to Uncertainty: Generating Predictive Uncertainty Measures via Bayesian Estimation</a>, 2025 ICLR
+    - <a href="https://openreview.net/forum?id=DTxx0D9pTf&referrer=%5Bthe%20profile%20of%20Vladimir%20Kondratyev%5D(%2Fprofile%3Fid%3D~Vladimir_Kondratyev1)" target="_blank">Multidimensional Uncertainty Quantification via Optimal Transport</a>, Submitted to 2026 ICLR
   </p>
   <p>
-    <a href="https://github.com/Neuralk-AI/workshop_AI_Pulse" target="_blank">Workshop on number representation at 2025 Pulse AI</a>, Scaleway
+    - <a href="https://openreview.net/forum?id=cWfpt2t37q&noteId=0zx16JfXDb" target="_blank">From Risk to Uncertainty: Generating Predictive Uncertainty Measures via Bayesian Estimation</a>, 2025 ICLR
   </p>
   <p>
-    <a href="https://jcheminf.biomedcentral.com/articles/10.1186/s13321-023-00681-4" target="_blank">Generative model based on junction tree variational autoencoder</a>, 2022 Journal of Cheminformatics
+    - <a href="https://github.com/Neuralk-AI/workshop_AI_Pulse" target="_blank">Workshop on number representation at 2025 Pulse AI</a>, Scaleway
   </p>
   <p>
-    <a href="https://www.overleaf.com/read/bfsssnpxrwgb#7bb66f" target="_blank">Weakly Supervised Multi-Output Regression</a>, 2023 Computer Data Analysis and Modeling: Stochastics and Data Science : Proc. of the XIII Intern. Conf., Minsk
+    - <a href="https://jcheminf.biomedcentral.com/articles/10.1186/s13321-023-00681-4" target="_blank">Generative model based on junction tree variational autoencoder</a>, 2022 Journal of Cheminformatics
   </p>
+  <p>
+    - <a href="https://www.overleaf.com/read/bfsssnpxrwgb#7bb66f" target="_blank">Weakly Supervised Multi-Output Regression</a>, 2023 Computer Data Analysis and Modeling: Stochastics and Data Science : Proc. of the XIII Intern. Conf., Minsk
   </p>
+  </div>
 
   <hr/>
   <p>Inspired by <a href="http://motherfuckingwebsite.com">this simple website</a>.</p>
@@ -104,5 +113,6 @@
     const randomSticker = stickers[Math.floor(Math.random() * stickers.length)];
     document.getElementById('randomSticker').src = randomSticker;
   </script>
+
 </body>
 </html>

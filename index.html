@@ -84,7 +84,7 @@
     height: auto;
     z-index: 10;
     }
-      .email_cursive {
+    .email_cursive {
       bottom: 0;
       max-width: 450px;
       right: 5%;
@@ -95,10 +95,19 @@
       margin-top: 0.2em;
       margin-bottom: 0.2em;
     }
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+    }
   </style>
 </head>
 <body>
-  <h1>Vladimir Kondratyev</h1>
+  <h1 class="visually-hidden">Vladimir Kondratyev</h1>
   <img class="email_cursive" src="assets/email_cursive.png" alt="Email address for Vladimir Kondratyev">
   <p>
     <a href="https://github.com/VldKnd" target="_blank" rel="noopener noreferrer">github</a>
@@ -106,6 +115,9 @@
   </p>
   <p>
     &emsp;Hello! I'm Vladimir Kondratyev, a software engineer and researcher with a strong interest in applied mathematics, Bayesian statistics, and uncertainty quantification. I currently pursue a PhD in statistical machine learning at MBZUAI, under the supervision of Maxim Panov and Eric Moulines. Over the course of my studies and professional experience, I've completed a variety of projects—ranging from simple front-end development to the design and implementation of complex machine learning systems. I'm currently based in France and always open to collaborations—feel free to reach out!
+  </p>
+  <p>
+    &emsp;I have research work accepted at ICLR 2026, see you in Rio!
   </p>
 
   <div class="publications">
